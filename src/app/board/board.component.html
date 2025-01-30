@@ -1,9 +1,23 @@
 <div class="board">
-  <div *ngFor="let stage of stages" class="stage" cdkDropList [cdkDropListData]="stage.tasks" [id]="stage.id" (cdkDropListDropped)="drop($event)">
-    <h3>{{ stage.title }}</h3>
-    <div *ngFor="let task of stage.tasks" class="task" cdkDrag [cdkDragData]="task">
-      <h4>{{ task.title }}</h4>
-      <p>{{ task.description }}</p>
+  <div *ngFor="let stage of stages; let i = index" class="stage">
+    <h3>
+      {{ stage.title }}
+      <span class="task-count">({{ stage.tasks.length }})</span>
+    </h3>
+    <div
+      cdkDropList
+      [id]="'stage-' + stage.id"
+      [cdkDropListData]="stage.tasks"
+      [cdkDropListConnectedTo]="getConnectedDropListIds()"
+      class="task-list"
+      (cdkDropListDropped)="drop($event)">
+      <div *ngFor="let task of stage.tasks" 
+           class="task" 
+           cdkDrag
+           [cdkDragData]="task">
+        <h4>{{ task.title }}</h4>
+        <p>{{ task.description }}</p>
+      </div>
     </div>
   </div>
 </div>
