@@ -20,12 +20,12 @@
     "title": "In Progress",
     "tasks": [
       {
-        "id": "1",
+        "id": "3",
         "title": "Sample Task 3",
         "description": "This is another sample task"
       },
       {
-        "id": "2",
+        "id": "4",
         "title": "Sample Task 4",
         "description": "This is another sample task"
       }
@@ -36,12 +36,12 @@
     "title": "Done",
     "tasks": [
       {
-        "id": "1",
+        "id": "5",
         "title": "Sample Task 5",
         "description": "This is another sample task"
       },
       {
-        "id": "2",
+        "id": "6",
         "title": "Sample Task 6",
         "description": "This is another sample task"
       }
