@@ -1,16 +1,23 @@
-# TaskBoard
+<div align="center" text-align="center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=TaskBoard&reversal=false">
+</div>
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/brunoliratm/TaskBoard/build.yml)
-![License](https://img.shields.io/github/license/brunoliratm/TaskBoard)
-![Version](https://img.shields.io/github/package-json/v/brunoliratm/TaskBoard)
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/brunoliratm/TaskBoard">
+    <img src="https://img.shields.io/github/last-commit/brunoliratm/TaskBoard">
+    <img src="https://img.shields.io/github/license/brunoliratm/TaskBoard">
+</p>
 
 TaskBoard is a simple yet powerful task management tool designed to help you organize and prioritize your tasks efficiently. This README provides an overview of the project, installation instructions, usage guidelines, and contribution details.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Steps](#steps)
 - [Usage](#usage)
-- [Configuration](#configuration)
+  - [Running the Application](#running-the-application)
 - [Contributing](#contributing)
 - [License](#license)
 - [Screenshots](#screenshots)
@@ -18,6 +25,7 @@ TaskBoard is a simple yet powerful task management tool designed to help you org
 - [Future Enhancements](#future-enhancements)
 
 ## Features
+
 - **Task Management**: Create, update, and delete tasks.
 - **Prioritization**: Assign priority levels to tasks.
 - **Categorization**: Organize tasks into categories.
@@ -28,51 +36,52 @@ TaskBoard is a simple yet powerful task management tool designed to help you org
 ## Installation
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) (v6 or higher)
+
+- ![Node.js](https://img.shields.io/badge/Node.js-v14%20or%20higher-brightgreen)
+- ![npm](https://img.shields.io/badge/npm-v6%20or%20higher-brightgreen)
 
 ### Steps
+
 1. Clone the repository:
-  ```bash
-  git clone https://github.com/brunoliratm/TaskBoard.git
-  ```
+
+```bash
+git clone https://github.com/brunoliratm/TaskBoard.git
+```
+
 2. Navigate to the project directory:
-  ```bash
-  cd TaskBoard
-  ```
+
+```bash
+cd TaskBoard
+```
+
 3. Install dependencies:
-  ```bash
-  npm install
-  ```
+
+```bash
+npm install
+```
+
 4. Start the development server:
-  ```bash
-  npm start
-  ```
+
+```bash
+npm run dev
+```
 
 ## Usage
 
 ### Running the Application
+
 To run the application in development mode, use:
+
 ```bash
-npm start
+npm run dev
 ```
+
 Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
 
-### Building for Production
-To build the app for production, use:
-```bash
-npm run build
-```
-The build artifacts will be stored in the `build/` directory.
-
-## Configuration
-You can configure the application by modifying the `config.js` file located in the `src` directory. The configuration options include:
-- **Database Connection**: Set up the database connection string.
-- **Authentication**: Configure authentication settings.
-- **API Endpoints**: Define API endpoints for various services.
-
 ## Contributing
+
 We welcome contributions from the community! To contribute, follow these steps:
+
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/YourFeature`).
 3. Commit your changes (`git commit -m 'Add some feature'`).
@@ -82,29 +91,32 @@ We welcome contributions from the community! To contribute, follow these steps:
 Please ensure your code adheres to our coding standards and includes appropriate tests.
 
 ## License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Screenshots
+
 Here are some screenshots of the TaskBoard application:
 
 ### Main Board
+
 (in build)
 
 ### Task Details
+
 (in build)
 
 ## Technologies Used
-- **Angular**: Frontend framework
-- **Angular Material**: UI components
-- **CDK Drag and Drop**: Drag and drop functionality
-- **Node.js**: Backend runtime
-- **Express**: Backend framework
-- **JSON**: Data storage
+
+- ![TypeScript](https://img.shields.io/badge/TypeScript-Programming_language-blue)
+- ![Angular](https://img.shields.io/badge/Angular-Frontend_framework-red)
+- ![Angular Material](https://img.shields.io/badge/Angular_Material-UI_components-red)
+- ![CDK Drag and Drop](https://img.shields.io/badge/CDK_Drag_and_Drop-Drag_and_drop_functionality-red)
+- ![Node.js](https://img.shields.io/badge/Node.js-Backend_runtime-green)
+- ![Express](https://img.shields.io/badge/Express-Backend_framework-green)
+- ![JSON](https://img.shields.io/badge/JSON-Data_storage-green)
 
 ## Future Enhancements
-- **User Authentication**: Add user login and registration functionality.
+
 - **Notifications**: Implement notifications for task deadlines.
-- **Subtasks**: Allow tasks to have subtasks.
 - **Comments**: Enable users to add comments to tasks.
-
-

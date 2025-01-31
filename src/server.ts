@@ -10,16 +10,11 @@ import bodyParser from 'body-parser';
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
 const indexHtml = join(serverDistFolder, 'index.server.html');
-
 const app = express();
 const commonEngine = new CommonEngine();
 
 app.use(bodyParser.json());
 
-
-/**
- * Serve static files from /browser
- */
 app.get(
   '**',
   express.static(browserDistFolder, {
@@ -28,9 +23,6 @@ app.get(
   }),
 );
 
-/**
- * Handle all other requests by rendering the Angular application.
- */
 app.get('**', (req, res, next) => {
   const { protocol, originalUrl, baseUrl, headers } = req;
 
@@ -46,10 +38,6 @@ app.get('**', (req, res, next) => {
     .catch((err) => next(err));
 });
 
-/**
- * Start the server if this module is the main entry point.
- * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
- */
 if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
   app.listen(port, () => {
