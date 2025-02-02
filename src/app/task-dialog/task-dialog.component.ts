@@ -5,12 +5,15 @@ import { Stage, Task } from '../services/stage.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-task-dialog',
   templateUrl: './task-dialog.component.html',
   styleUrls: ['./task-dialog.component.scss'],
-  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule]
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatIconModule, MatButtonModule]
 })
 export class TaskDialogComponent {
   taskForm: FormGroup;
