@@ -12,6 +12,7 @@ export interface Stage {
   id: string;
   title: string;
   tasks: Task[];
+  editing?: boolean;
 }
 
 @Injectable({
