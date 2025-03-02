@@ -6,11 +6,12 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import {
   StageService,
   Stage as StageModel,
   Task,
-} from '../services/stage.service';
+} from '../../services/stage.service';
 import { MatDialog } from '@angular/material/dialog';
 import { TaskDialogComponent } from '../task-dialog/task-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,13 +21,8 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-board',
   template: `
-    <div
-      class="board"
-      cdkDropList
-      [cdkDropListData]="stages"
-      (cdkDropListDropped)="dropStage($event)"
-    >
-      <div *ngFor="let stage of stages; let i = index" class="stage" cdkDrag>
+    <div class="board">
+      <div *ngFor="let stage of stages; let i = index" class="stage">
         <h3>
           <input
             *ngIf="stage.editing"
@@ -39,6 +35,7 @@ import { FormsModule } from '@angular/forms';
           }}</mat-icon>
           <span class="task-count">({{ stage.tasks.length }})</span>
         </h3>
+
         <div
           cdkDropList
           [id]="'stage-' + stage.id"
@@ -47,17 +44,23 @@ import { FormsModule } from '@angular/forms';
           class="task-list"
           (cdkDropListDropped)="drop($event)"
         >
-          <div
-            *ngFor="let task of stage.tasks"
-            class="task"
-            cdkDrag
-            [cdkDragData]="task"
+          <cdk-virtual-scroll-viewport
+            [itemSize]="10"
+            class="virtual-scroll-viewport"
           >
-            <h4>{{ task.title }}</h4>
-            <p>{{ task.description }}</p>
-          </div>
-          <button mat-button (click)="openTaskDialog(stage)">Add Task</button>
+            <div
+              *ngFor="let task of stage.tasks"
+              class="task"
+              cdkDrag
+              [cdkDragData]="task"
+            >
+              <h4>{{ task.title }}</h4>
+              <p>{{ task.description }}</p>
+            </div>
+          </cdk-virtual-scroll-viewport>
         </div>
+
+        <button mat-button (click)="openTaskDialog(stage)">Add Task</button>
       </div>
     </div>
   `,
@@ -69,6 +72,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     FormsModule,
+    ScrollingModule,
   ],
 })
 export class BoardComponent implements OnInit {
@@ -110,11 +114,6 @@ export class BoardComponent implements OnInit {
     this.saveStages();
   }
 
-  dropStage(event: CdkDragDrop<StageModel[]>) {
-    moveItemInArray(this.stages, event.previousIndex, event.currentIndex);
-    this.saveStages();
-  }
-
   getConnectedDropListIds(): string[] {
     return this.stages.map((stage) => 'stage-' + stage.id);
   }
@@ -135,6 +134,7 @@ export class BoardComponent implements OnInit {
 
   editStageTitle(stage: StageModel, newTitle: string) {
     stage.title = newTitle;
+    stage.editing = false;
     this.saveStages();
   }
 
@@ -154,11 +154,4 @@ export class BoardComponent implements OnInit {
       },
     });
   }
-}
-
-export interface Stage {
-  id: string;
-  title: string;
-  tasks: Task[];
-  editing?: boolean;
 }

@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-header',
   template: `
+
     <div class="header-container">
       <div class="header-title">TaskBoard</div>
       <div class="header-buttons">
@@ -20,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
         </mat-menu>
       </div>
     </div>
+    
   `,
   styleUrls: ['./header.component.scss'],
   imports: [MatButtonModule, MatMenuModule],

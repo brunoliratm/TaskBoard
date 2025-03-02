@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Stage, Task } from '../services/stage.service';
+import { Stage, Task } from '../../services/stage.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-task-dialog',
   template: `
+
   <div mat-dialog-content class="mat-typography">
   <mat-toolbar color="primary">
     <span class="title">Add Task</span>
@@ -35,6 +36,7 @@ import {MatButtonModule} from '@angular/material/button';
     </div>
   </form>
 </div>
+
   `,
   styleUrls: ['./task-dialog.component.scss'],
   imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatIconModule, MatButtonModule]
