@@ -3,48 +3,21 @@
     "id": "1",
     "title": "To Do",
     "tasks": [
-      {
-        "id": "1",
-        "title": "Sample Task 1",
-        "description": "This is a sample task"
-      },
-      {
-        "id": "2",
-        "title": "Sample Task 2",
-        "description": "This is another sample task"
-      }
-    ]
+    ],
+    "editing": false
   },
   {
     "id": "2",
     "title": "In Progress",
     "tasks": [
-      {
-        "id": "3",
-        "title": "Sample Task 3",
-        "description": "This is another sample task"
-      },
-      {
-        "id": "4",
-        "title": "Sample Task 4",
-        "description": "This is another sample task"
-      }
-    ]
+    ],
+    "editing": false
   },
   {
     "id": "3",
     "title": "Done",
     "tasks": [
-      {
-        "id": "5",
-        "title": "Sample Task 5",
-        "description": "This is another sample task"
-      },
-      {
-        "id": "6",
-        "title": "Sample Task 6",
-        "description": "This is another sample task"
-      }
-    ]
+    ],
+    "editing": false
   }
 ]
