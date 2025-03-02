@@ -11,7 +11,31 @@ import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-task-dialog',
-  templateUrl: './task-dialog.component.html',
+  template: `
+  <div mat-dialog-content class="mat-typography">
+  <mat-toolbar color="primary">
+    <span class="title">Add Task</span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="onClose()" class="close">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar>
+  <form [formGroup]="taskForm" (ngSubmit)="onSave()">
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onClose()" class="cancel"><mat-icon>cancel</mat-icon>Cancel</button>
+      <button mat-button color="primary" type="submit" class="save"><mat-icon>check_circle</mat-icon>Save</button>
+    </div>
+  </form>
+</div>
+  `,
   styleUrls: ['./task-dialog.component.scss'],
   imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatIconModule, MatButtonModule]
 })
