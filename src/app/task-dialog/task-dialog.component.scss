@@ -41,7 +41,7 @@ mat-form-field {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  
+
 }
 
 mat-dialog-actions {
@@ -50,8 +50,8 @@ mat-dialog-actions {
   gap: 8px;
 }
 
-button { 
-  gap: 8px; 
+button {
+  gap: 8px;
 }
 
 button.close {
@@ -62,7 +62,7 @@ button.close {
 button.cancel {
   background-color: #f44336;
   margin-right: 2px;
-  border-radius: 20px; 
+  border-radius: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,7 +72,7 @@ button.cancel:hover {
 
 button.save {
   background-color: #4caf50;
-  border-radius: 20px; 
+  border-radius: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
