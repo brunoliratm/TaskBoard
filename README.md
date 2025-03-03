@@ -1,122 +1,123 @@
-<div align="center" text-align="center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=TaskBoard&reversal=false">
+<div align="center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=TaskBoard&fontAlignY=35&desc=Streamline Your Task Management&descAlignY=60&descSize=20" alt="TaskBoard Banner">
+</div>
+
+<div align="center">
+    <img src="https://img.shields.io/github/repo-size/brunoliratm/TaskBoard" alt="Repo Size">
+    <img src="https://img.shields.io/github/last-commit/brunoliratm/TaskBoard" alt="Last Commit">
+    <img src="https://img.shields.io/github/license/brunoliratm/TaskBoard" alt="License">
+    <img src="https://img.shields.io/badge/status-in%20development-yellow" alt="Status">
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/brunoliratm/TaskBoard">
-    <img src="https://img.shields.io/github/last-commit/brunoliratm/TaskBoard">
-    <img src="https://img.shields.io/github/license/brunoliratm/TaskBoard">
+  <b>TaskBoard</b> is an intuitive, flexible task management application designed to boost productivity and streamline workflow organization. With a clean, drag-and-drop interface, it enables teams and individuals to visualize work progress and manage priorities efficiently.
 </p>
 
-TaskBoard is a simple yet powerful task management tool designed to help you organize and prioritize your tasks efficiently. This README provides an overview of the project, installation instructions, usage guidelines, and contribution details.
+## ✨ Features
 
-## Table of Contents
+- **📋 Comprehensive Task Management** - Create, edit, delete, and track tasks in a visual interface
+- **🔄 Intuitive Drag-and-Drop** - Move tasks between stages with smooth drag-and-drop functionality
+- **🏷️ Task Categorization & Tagging** - Organize tasks with custom categories and color-coded tags
+- **⏰ Due Date Tracking** - Set and monitor deadlines with visual indicators for approaching due dates
+- **🔝 Priority Levels** - Assign and filter tasks by priority (Low, Medium, High, Critical)
+- **📊 Custom Stages** - Create, reorder, and customize workflow stages to match your process
+- **🔍 Powerful Filtering** - Find tasks quickly with multi-parameter search and filtering
+- **📱 Responsive Design** - Access your tasks from any device with a fully responsive interface
 
-- [Features](#features)
-- [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Steps](#steps)
-- [Usage](#usage)
-  - [Running the Application](#running-the-application)
-- [Contributing](#contributing)
-- [License](#license)
-- [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
-- [Future Enhancements](#future-enhancements)
-
-## Features
-
-- **Task Management**: Create, update, and delete tasks.
-- **Prioritization**: Assign priority levels to tasks.
-- **Categorization**: Organize tasks into categories.
-- **Due Dates**: Set and track due dates for tasks.
-- **Drag and Drop**: Reorder tasks and move them between stages using drag and drop.
-- **Stage Management**: Add, modify, remove, and reorder stages.
-
-## Installation
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- ![Node.js](https://img.shields.io/badge/Node.js-v14%20or%20higher-brightgreen)
-- ![npm](https://img.shields.io/badge/npm-v6%20or%20higher-brightgreen)
+- Node.js (v14.0 or higher) - [Download Node.js](https://nodejs.org/)
+- npm (v6.0 or higher)
+- Git - [Download Git](https://git-scm.com/downloads)
 
-### Steps
+### Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/brunoliratm/TaskBoard.git
+   cd TaskBoard
+   ```
 
-```bash
-git clone https://github.com/brunoliratm/TaskBoard.git
-```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-2. Navigate to the project directory:
+3. **Start development server**:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-cd TaskBoard
-```
+4. **Access the application**:
+   Open your browser and navigate to [http://localhost:4200](http://localhost:4200)
 
-3. Install dependencies:
+## 🛠️ Technology Stack
 
-```bash
-npm install
-```
+<div align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
+  <img src="https://img.shields.io/badge/Angular_Material-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" alt="Angular Material">
+  <img src="https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+</div>
 
-4. Start the development server:
+## 📖 User Guide
 
-```bash
-npm run dev
-```
+### First Steps
+1. **Create a Task**: Click the "+" button in any column to add a new task
+2. **Manage Tasks**: Edit task details by clicking on a task card
+3. **Organize Workflow**: Drag tasks between columns to update their status
+4. **Customize Stages**: Use the settings menu to add or modify stages
 
-## Usage
+### Keyboard Shortcuts
+- `N` - Create a new task
+- `F` - Open search/filter
+- `Esc` - Close current dialog
+- `H` - Toggle help panel
 
-### Running the Application
+## 🛣️ Roadmap
 
-To run the application in development mode, use:
+- [ ] **Team Collaboration** - Shared boards and team member assignments
+- [ ] **Advanced Analytics** - Task completion metrics and performance dashboards
+- [ ] **API Integration** - Connect with popular tools via webhooks and API
+- [ ] **Offline Support** - Local caching for offline usage
 
-```bash
-npm run dev
-```
+## 🤝 Contributing
 
-Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
+We welcome contributions from the community! Here's how you can help:
 
-## Contributing
+1. **Fork the repository**
+2. **Create a feature branch**:
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes**:
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+4. **Push to your branch**:
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
 
-We welcome contributions from the community! To contribute, follow these steps:
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for detailed information.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
+## 📜 License
 
-Please ensure your code adheres to our coding standards and includes appropriate tests.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## License
+## 📷 Screenshots
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+<div align="center">
+  <em>Screenshots coming soon as development progresses</em>
+</div>
 
-## Screenshots
+---
 
-Here are some screenshots of the TaskBoard application:
-
-### Main Board
-
-(in build)
-
-### Task Details
-
-(in build)
-
-## Technologies Used
-
-- ![TypeScript](https://img.shields.io/badge/TypeScript-Programming_language-blue)
-- ![Angular](https://img.shields.io/badge/Angular-Frontend_framework-red)
-- ![Angular Material](https://img.shields.io/badge/Angular_Material-UI_components-red)
-- ![CDK Drag and Drop](https://img.shields.io/badge/CDK_Drag_and_Drop-Drag_and_drop_functionality-red)
-- ![Node.js](https://img.shields.io/badge/Node.js-Backend_runtime-green)
-- ![Express](https://img.shields.io/badge/Express-Backend_framework-green)
-- ![JSON](https://img.shields.io/badge/JSON-Data_storage-green)
-
-## Future Enhancements
-
-- **Notifications**: Implement notifications for task deadlines.
-- **Comments**: Enable users to add comments to tasks.
+<div align="center">
+  <sub>Built with ❤️ by Bruno Lira</sub>
+</div>
