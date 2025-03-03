@@ -17,12 +17,7 @@
 
 - **📋 Comprehensive Task Management** - Create, edit, delete, and track tasks in a visual interface
 - **🔄 Intuitive Drag-and-Drop** - Move tasks between stages with smooth drag-and-drop functionality
-- **🏷️ Task Categorization & Tagging** - Organize tasks with custom categories and color-coded tags
-- **⏰ Due Date Tracking** - Set and monitor deadlines with visual indicators for approaching due dates
 - **🔝 Priority Levels** - Assign and filter tasks by priority (Low, Medium, High, Critical)
-- **📊 Custom Stages** - Create, reorder, and customize workflow stages to match your process
-- **🔍 Powerful Filtering** - Find tasks quickly with multi-parameter search and filtering
-- **📱 Responsive Design** - Access your tasks from any device with a fully responsive interface
 
 ## 🚀 Getting Started
 
@@ -72,17 +67,9 @@
 3. **Organize Workflow**: Drag tasks between columns to update their status
 4. **Customize Stages**: Use the settings menu to add or modify stages
 
-### Keyboard Shortcuts
-- `N` - Create a new task
-- `F` - Open search/filter
-- `Esc` - Close current dialog
-- `H` - Toggle help panel
-
 ## 🛣️ Roadmap
 
 - [ ] **Team Collaboration** - Shared boards and team member assignments
-- [ ] **Advanced Analytics** - Task completion metrics and performance dashboards
-- [ ] **API Integration** - Connect with popular tools via webhooks and API
 - [ ] **Offline Support** - Local caching for offline usage
 
 ## 🤝 Contributing
