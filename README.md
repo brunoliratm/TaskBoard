@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=TaskBoard&fontAlignY=35&desc=Streamline Your Task Management&descAlignY=60&descSize=20" alt="TaskBoard Banner">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=TaskBoard" alt="TaskBoard Banner">
 </div>
 
 <div align="center">
